@@ -52,6 +52,8 @@ class User {
     if (query.CustomerAdd) where.push(`CustomerAdd = '${query.CustomerAdd}'`)
     if (query.CustomerUsername)
       where.push(`CustomerUsername = '${query.CustomerUsername}'`)
+    if (query.CustomerPassword)
+      where.push(`CustomerPassword = '${query.CustomerPassword}'`)
     if (query.CustomerBirthday)
       where.push(`CustomerBirthday = '${query.CustomerBirthday}'`)
 
